@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Beloved Shravani 💕</title>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, 
+                #fefbff 0%, 
+                #fdf4ff 20%, 
+                #fae8ff 40%, 
+                #f3e8ff 60%, 
+                #ede9fe 80%, 
+                #e0e7ff 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Caveat', cursive;
+            padding: 20px;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Subtle animated background */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                radial-gradient(circle at 20% 30%, rgba(255, 182, 193, 0.08) 0%, transparent 30%),
+                radial-gradient(circle at 80% 70%, rgba(255, 192, 203, 0.06) 0%, transparent 30%),
+                radial-gradient(circle at 40% 80%, rgba(221, 160, 221, 0.05) 0%, transparent 30%);
+            pointer-events: none;
+            z-index: -1;
+            animation: gentleFloat 25s ease-in-out infinite;
+        }
+
+        @keyframes gentleFloat {
+            0%, 100% { transform: translateY(0px) rotate(0deg); opacity: 1; }
+            50% { transform: translateY(-8px) rotate(0.5deg); opacity: 0.8; }
+        }
+
+        .letter-container {
+            background: #ffffff;
+            max-width: 720px;
+            width: 100%;
+            border-radius: 16px;
+            box-shadow: 
+                0 25px 50px rgba(0, 0, 0, 0.1),
+                0 12px 25px rgba(0, 0, 0, 0.05),
+                inset 0 1px 0 rgba(255, 255, 255, 0.9);
+            position: relative;
+            transform: rotate(-0.6deg);
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            overflow: hidden;
+        }
+
+        .letter-container:hover {
+            transform: rotate(0deg) scale(1.01);
+            box-shadow: 
+                0 30px 60px rgba(0, 0, 0, 0.12),
+                0 15px 30px rgba(0, 0, 0, 0.06),
+                inset 0 1px 0 rgba(255, 255, 255, 0.9);
+        }
+
+        /* Elegant header */
+        .letter-header {
+            background: linear-gradient(135deg, #fce7f3 0%, #f3e8ff 100%);
+            padding: 30px;
+            text-align: center;
+            border-bottom: 2px solid #f1f5f9;
+            position: relative;
+        }
+
+        .letter-header::before {
+            content: '💕';
+            position: absolute;
+            top: 12px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 16px;
+            opacity: 0.7;
+            animation: gentlePulse 3s ease-in-out infinite;
+        }
+
+        @keyframes gentlePulse {
+            0%, 100% { opacity: 0.7; transform: translateX(-50%) scale(1); }
+            50% { opacity: 1; transform: translateX(-50%) scale(1.1); }
+        }
+
+        .letter-title {
+            font-family: 'Dancing Script', cursive;
+            font-size: 20px;
+            color: #be185d;
+            font-weight: 600;
+            margin-top: 8px;
+        }
+
+        /* Perfect lined paper with precise alignment */
+        .letter-content {
+            padding: 65px 85px 55px 105px;
+            background-image: 
+                /* Paper texture */
+                radial-gradient(circle at 1.5px 1.5px, rgba(0,0,0,0.012) 1px, transparent 0),
+                /* Perfectly spaced lines */
+                repeating-linear-gradient(
+                    transparent,
+                    transparent 33px,
+                    rgba(59, 130, 246, 0.08) 33px,
+                    rgba(59, 130, 246, 0.08) 34px
+                );
+            background-size: 22px 22px, 100% 34px;
+            position: relative;
+            line-height: 34px; /* Perfect line alignment */
+            font-size: 21px;
+            color: #1f2937;
+            font-weight: 500;
+            letter-spacing: 0.2px;
+        }
+
+        /* Margin line */
+        .letter-content::before {
+            content: '';
+            position: absolute;
+            left: 78px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(to bottom, 
+                #f472b6 0%, 
+                #ec4899 50%, 
+                #be185d 100%);
+            opacity: 0.6;
+            border-radius: 1px;
+        }
+
+        /* Hole punches */
+        .letter-content::after {
+            content: '';
+            position: absolute;
+            left: 30px;
+            top: 90px;
+            width: 12px;
+            height: 12px;
+            background: radial-gradient(circle, #f8fafc 40%, #e2e8f0 100%);
+            border-radius: 50%;
+            box-shadow: 
+                0 130px 0 #f8fafc,
+                0 260px 0 #f8fafc,
+                0 390px 0 #f8fafc,
+                inset 0 2px 3px rgba(0, 0, 0, 0.08);
+        }
+
+        /* Text sections with perfect spacing */
+        .greeting {
+            margin-bottom: 34px;
+            font-size: 25px;
+            color: #be185d;
+            font-weight: 600;
+            font-family: 'Dancing Script', cursive;
+            line-height: 34px;
+        }
+
+        .body-text {
+            margin-bottom: 34px;
+        }
+
+        .paragraph {
+            margin-bottom: 34px;
+            text-align: justify;
+            text-justify: inter-word;
+            line-height: 34px;
+            position: relative;
+        }
+
+        .signature-section {
+            margin-top: 68px;
+            text-align: right;
+        }
+
+        .signature {
+            font-size: 23px;
+            color: #be185d;
+            font-weight: 600;
+            font-family: 'Dancing Script', cursive;
+            line-height: 34px;
+        }
+
+        /* FIXED CURSOR - Only appears at current typing position */
+        .typing-cursor {
+            display: inline-block;
+            background: linear-gradient(45deg, #f472b6, #ec4899);
+            width: 2px;
+            height: 26px;
+            animation: preciseBlink 1.3s infinite;
+            border-radius: 1px;
+            box-shadow: 0 0 8px rgba(244, 114, 182, 0.3);
+            vertical-align: baseline;
+            margin-left: 1px;
+        }
+
+        @keyframes preciseBlink {
+            0%, 45% { opacity: 1; }
+            46%, 100% { opacity: 0; }
+        }
+
+        /* Heart animation */
+        .heart {
+            color: #f43f5e;
+            font-size: 1.1em;
+            animation: heartPulse 2.5s ease-in-out infinite;
+            display: inline-block;
+            filter: drop-shadow(0 1px 2px rgba(244, 63, 94, 0.2));
+        }
+
+        @keyframes heartPulse {
+            0% { transform: scale(1); }
+            20% { transform: scale(1.12); }
+            40% { transform: scale(1); }
+            60% { transform: scale(1.08); }
+            80% { transform: scale(1); }
+            100% { transform: scale(1); }
+        }
+
+        /* Loading screen */
+        .loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #fefbff, #f3e8ff);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 10000;
+            transition: all 1.2s ease;
+        }
+
+        .loading-text {
+            font-family: 'Dancing Script', cursive;
+            font-size: 30px;
+            color: #be185d;
+            animation: loadingPulse 2.2s ease-in-out infinite;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .loading-hearts {
+            font-size: 20px;
+            animation: floatingLoad 1.8s ease-in-out infinite;
+        }
+
+        @keyframes loadingPulse {
+            0%, 100% { opacity: 0.8; transform: translateY(0px) scale(1); }
+            50% { opacity: 1; transform: translateY(-3px) scale(1.03); }
+        }
+
+        @keyframes floatingLoad {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-8px); }
+        }
+
+        /* Floating elements */
+        .floating-heart {
+            position: fixed;
+            font-size: 16px;
+            pointer-events: none;
+            z-index: 1000;
+            animation: floatUpGentle 6s ease-out forwards;
+        }
+
+        @keyframes floatUpGentle {
+            0% {
+                transform: translateY(0) rotate(0deg) scale(0);
+                opacity: 0;
+            }
+            10% {
+                opacity: 0.8;
+                transform: translateY(-25px) rotate(10deg) scale(1);
+            }
+            90% {
+                opacity: 0.3;
+                transform: translateY(-90vh) rotate(350deg) scale(0.8);
+            }
+            100% {
+                opacity: 0;
+                transform: translateY(-100vh) rotate(360deg) scale(0);
+            }
+        }
+
+        .sparkle {
+            position: fixed;
+            pointer-events: none;
+            z-index: 999;
+            animation: sparkleGentle 2.5s ease-out forwards;
+        }
+
+        @keyframes sparkleGentle {
+            0% {
+                transform: scale(0) rotate(0deg);
+                opacity: 1;
+            }
+            40% {
+                transform: scale(1) rotate(144deg);
+                opacity: 0.9;
+            }
+            80% {
+                transform: scale(0.7) rotate(288deg);
+                opacity: 0.4;
+            }
+            100% {
+                transform: scale(0) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .letter-content {
+                padding: 55px 65px 45px 85px;
+                font-size: 19px;
+                line-height: 32px;
+                background-size: 20px 20px, 100% 32px;
+            }
+            
+            .letter-content::before {
+                left: 65px;
+            }
+
+            .letter-content::after {
+                left: 28px;
+                top: 80px;
+            }
+            
+            .greeting {
+                font-size: 23px;
+                line-height: 32px;
+                margin-bottom: 32px;
+            }
+            
+            .signature {
+                font-size: 21px;
+                line-height: 32px;
+            }
+
+            .paragraph {
+                margin-bottom: 32px;
+                line-height: 32px;
+            }
+
+            .signature-section {
+                margin-top: 64px;
+            }
+
+            .typing-cursor {
+                height: 24px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .letter-content {
+                padding: 45px 45px 35px 70px;
+                font-size: 17px;
+                line-height: 30px;
+                background-size: 18px 18px, 100% 30px;
+            }
+            
+            .letter-content::before {
+                left: 55px;
+            }
+
+            .letter-content::after {
+                left: 25px;
+                top: 70px;
+            }
+            
+            .greeting {
+                font-size: 21px;
+                line-height: 30px;
+                margin-bottom: 30px;
+            }
+            
+            .signature {
+                font-size: 19px;
+                line-height: 30px;
+            }
+
+            .paragraph {
+                margin-bottom: 30px;
+                line-height: 30px;
+            }
+
+            .signature-section {
+                margin-top: 60px;
+            }
+
+            .typing-cursor {
+                height: 22px;
+            }
+        }
+
+        /* Gentle glow effect */
+        .letter-glow {
+            animation: gentleGlow 5s ease-in-out infinite alternate;
+        }
+
+        @keyframes gentleGlow {
+            0% {
+                box-shadow: 
+                    0 25px 50px rgba(0, 0, 0, 0.1),
+                    0 12px 25px rgba(0, 0, 0, 0.05),
+                    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+            }
+            100% {
+                box-shadow: 
+                    0 25px 50px rgba(0, 0, 0, 0.1),
+                    0 12px 25px rgba(0, 0, 0, 0.05),
+                    inset 0 1px 0 rgba(255, 255, 255, 0.9),
+                    0 0 35px rgba(244, 114, 182, 0.08);
+            }
+        }
+
+        /* Emotional emphasis for certain phrases */
+        .emphasis {
+            color: #be185d;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="loading" id="loading">
+        <div class="loading-text">Pouring my heart onto paper...</div>
+        <div class="loading-hearts">💕 ✨ 💖</div>
+    </div>
+
+    <div class="letter-container" id="letterContainer">
+        <div class="letter-header">
+            <div class="letter-title">From My Heart to Yours</div>
+        </div>
+        
+        <div class="letter-content">
+            <div class="greeting">
+                <span id="greeting-text"></span>
+            </div>
+            <div class="body-text">
+                <div class="paragraph">
+                    <span id="paragraph1"></span>
+                </div>
+                <div class="paragraph">
+                    <span id="paragraph2"></span>
+                </div>
+                <div class="paragraph">
+                    <span id="paragraph3"></span>
+                </div>
+                <div class="paragraph">
+                    <span id="paragraph4"></span>
+                </div>
+                <div class="paragraph">
+                    <span id="paragraph5"></span>
+                </div>
+                <div class="paragraph">
+                    <span id="paragraph6"></span>
+                </div>
+            </div>
+            <div class="signature-section">
+                <div class="signature">
+                    <span id="signature-text"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const letterContent = {
+            greeting: "Dear Shravani,",
+            paragraph1: "I know we've hit rough patches lately the arguments, the distance, the nights when the spark felt missing. For nearly four years you've been my closest person, and it hurts to see you uncertain.",
+            paragraph2: "I want you to know I'm working on listening more, loving better, planning dates with you, and being someone who gives you peace not more worry. I'm trying on the outside and the inside, and I will keep trying.",
+            paragraph3: "If I made you cry when we spoke, I'm sorry. I never wanted to be that reason. Your smile, your happiness they matter to me more than anything.",
+            paragraph4: "I will keep choosing you, even when it gets messy. Even when things break, I want to fix them with you.",
+            paragraph5: "You are my home and my favorite story.",
+            paragraph6: "",
+            signature: "Always yours,\nSoham ❤️"
+        };
+
+        // Elements
+        const loading = document.getElementById('loading');
+        const letterContainer = document.getElementById('letterContainer');
+        const greetingElement = document.getElementById('greeting-text');
+        const paragraph1Element = document.getElementById('paragraph1');
+        const paragraph2Element = document.getElementById('paragraph2');
+        const paragraph3Element = document.getElementById('paragraph3');
+        const paragraph4Element = document.getElementById('paragraph4');
+        const paragraph5Element = document.getElementById('paragraph5');
+        const paragraph6Element = document.getElementById('paragraph6');
+        const signatureElement = document.getElementById('signature-text');
+
+        let currentSection = 'greeting';
+        let currentIndex = 0;
+        let isTyping = false;
+        let currentCursor = null;
+
+        // FIXED CURSOR MANAGEMENT
+        function createCursor() {
+            if (currentCursor) {
+                currentCursor.remove();
+            }
+            currentCursor = document.createElement('span');
+            currentCursor.className = 'typing-cursor';
+            return currentCursor;
+        }
+
+        function typeWriter() {
+            if (isTyping) return;
+            isTyping = true;
+
+            let textToType = '';
+            let targetElement = null;
+
+            const sectionMap = {
+                'greeting': { text: letterContent.greeting, element: greetingElement },
+                'paragraph1': { text: letterContent.paragraph1, element: paragraph1Element },
+                'paragraph2': { text: letterContent.paragraph2, element: paragraph2Element },
+                'paragraph3': { text: letterContent.paragraph3, element: paragraph3Element },
+                'paragraph4': { text: letterContent.paragraph4, element: paragraph4Element },
+                'paragraph5': { text: letterContent.paragraph5, element: paragraph5Element },
+                'paragraph6': { text: letterContent.paragraph6, element: paragraph6Element },
+                'signature': { text: letterContent.signature, element: signatureElement }
+            };
+
+            const currentSectionData = sectionMap[currentSection];
+            textToType = currentSectionData.text;
+            targetElement = currentSectionData.element;
+
+            function typeNextChar() {
+                if (currentIndex < textToType.length) {
+                    const char = textToType.charAt(currentIndex);
+                    const currentText = textToType.substring(0, currentIndex + 1);
+                    
+                    // Handle special formatting
+                    let formattedText = currentText;
+                    if (formattedText.includes('❤️')) {
+                        formattedText = formattedText.replace(/❤️/g, '<span class="heart">❤️</span>');
+                    }
+                    if (formattedText.includes('\n')) {
+                        formattedText = formattedText.replace(/\n/g, '<br>');
+                    }
+
+                    // Add emphasis to certain emotional phrases
+                    formattedText = formattedText.replace(/(I'm sorry|I love you|Always yours|my home|favorite story)/gi, '<span class="emphasis">$1</span>');
+
+                    targetElement.innerHTML = formattedText;
+
+                    // Add cursor at the end of current text
+                    const cursor = createCursor();
+                    targetElement.appendChild(cursor);
+
+                    currentIndex++;
+
+                    // Natural typing rhythm with emotional pauses
+                    let delay = 80 + Math.random() * 60;
+                    
+                    if (char === '.' || char === '!' || char === '?') {
+                        delay += 500 + Math.random() * 300;
+                    } else if (char === ',' || char === ';') {
+                        delay += 250 + Math.random() * 150;
+                    } else if (char === ' ') {
+                        delay += 40 + Math.random() * 50;
+                    } else if (char === '—') {
+                        delay += 300 + Math.random() * 200;
+                    }
+
+                    setTimeout(typeNextChar, delay);
+                } else {
+                    moveToNextSection();
+                }
+            }
+
+            typeNextChar();
+        }
+
+        function moveToNextSection() {
+            const sections = ['greeting', 'paragraph1', 'paragraph2', 'paragraph3', 'paragraph4', 'paragraph5', 'paragraph6', 'signature'];
+            const currentSectionIndex = sections.indexOf(currentSection);
+            
+            if (currentSectionIndex < sections.length - 1) {
+                // Remove cursor from current section
+                if (currentCursor) {
+                    currentCursor.remove();
+                    currentCursor = null;
+                }
+
+                currentSection = sections[currentSectionIndex + 1];
+                currentIndex = 0;
+                isTyping = false;
+                
+                // Skip empty paragraphs
+                if (letterContent[currentSection] === "") {
+                    moveToNextSection();
+                    return;
+                }
+                
+                setTimeout(() => {
+                    typeWriter();
+                }, 1000 + Math.random() * 400);
+            } else {
+                finishTyping();
+            }
+        }
+
+        function finishTyping() {
+            setTimeout(() => {
+                if (currentCursor) {
+                    currentCursor.remove();
+                }
+                letterContainer.classList.add('letter-glow');
+                createHeartfeltCelebration();
+            }, 2500);
+        }
+
+        function createHeartfeltCelebration() {
+            // Gentle floating hearts
+            for (let i = 0; i < 10; i++) {
+                setTimeout(() => {
+                    createFloatingHeart();
+                }, i * 400);
+            }
+
+            // Soft sparkles
+            setTimeout(() => {
+                for (let i = 0; i < 15; i++) {
+                    setTimeout(() => {
+                        createSparkle();
+                    }, i * 300);
+                }
+            }, 2000);
+        }
+
+        function createFloatingHeart() {
+            const hearts = ['💕', '💖', '💗', '💝', '❤️', '🥰'];
+            const heart = document.createElement('div');
+            heart.className = 'floating-heart';
+            heart.innerHTML = hearts[Math.floor(Math.random() * hearts.length)];
+            heart.style.left = (Math.random() * (window.innerWidth - 50)) + 'px';
+            heart.style.top = (window.innerHeight - 50) + 'px';
+            heart.style.color = `hsl(${320 + Math.random() * 30}, 65%, 55%)`;
+            
+            document.body.appendChild(heart);
+            
+            setTimeout(() => {
+                if (heart.parentNode) {
+                    heart.parentNode.removeChild(heart);
+                }
+            }, 6000);
+        }
+
+        function createSparkle() {
+            const sparkles = ['✨', '⭐', '🌟', '💫'];
+            const sparkle = document.createElement('div');
+            sparkle.className = 'sparkle';
+            sparkle.innerHTML = sparkles[Math.floor(Math.random() * sparkles.length)];
+            
+            const rect = letterContainer.getBoundingClientRect();
+            sparkle.style.left = (rect.left + Math.random() * rect.width) + 'px';
+            sparkle.style.top = (rect.top + Math.random() * rect.height) + 'px';
+            sparkle.style.fontSize = (11 + Math.random() * 6) + 'px';
+            
+            document.body.appendChild(sparkle);
+            
+            setTimeout(() => {
+                if (sparkle.parentNode) {
+                    sparkle.parentNode.removeChild(sparkle);
+                }
+            }, 2500);
+        }
+
+        // Gentle mouse interaction
+        let lastSparkleTime = 0;
+        document.addEventListener('mousemove', (e) => {
+            const now = Date.now();
+            if (now - lastSparkleTime > 400 && Math.random() > 0.9) {
+                const sparkle = document.createElement('div');
+                sparkle.className = 'sparkle';
+                sparkle.innerHTML = '✨';
+                sparkle.style.left = (e.clientX - 8) + 'px';
+                sparkle.style.top = (e.clientY - 8) + 'px';
+                sparkle.style.fontSize = '12px';
+                sparkle.style.color = '#f472b6';
+                
+                document.body.appendChild(sparkle);
+                
+                setTimeout(() => {
+                    if (sparkle.parentNode) {
+                        sparkle.parentNode.removeChild(sparkle);
+                    }
+                }, 2500);
+                
+                lastSparkleTime = now;
+            }
+        });
+
+        // Start the experience
+        function startExperience() {
+            loading.style.opacity = '0';
+            setTimeout(() => {
+                loading.style.display = 'none';
+            }, 1200);
+
+            setTimeout(() => {
+                typeWriter();
+            }, 1800);
+        }
+
+        window.addEventListener('load', () => {
+            setTimeout(startExperience, 3000);
+        });
+
+        // Prevent text selection
+        document.addEventListener('selectstart', e => e.preventDefault());
+        document.addEventListener('contextmenu', e => e.preventDefault());
+    </script>
+</body>
+</html>
